@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="style2.css"> -->
+  <title>FlexBox</title>
+</head>
+<body>
+  <script>
+
+
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      // calque1/Trac
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(251.6, 275.2);
+      ctx.lineTo(0.5, 275.2);
+      ctx.lineTo(0.5, 0.5);
+      ctx.lineTo(251.6, 0.5);
+      ctx.lineTo(251.6, 275.2);
+      ctx.closePath();
+      ctx.fillStyle = "rgb(255, 255, 255)";
+      ctx.fill();
+      ctx.stroke();
+
+      // calque1/Trac
+      ctx.beginPath();
+      ctx.moveTo(160.6, 145.4);
+      ctx.lineTo(432.0, 145.4);
+      ctx.lineTo(432.0, 394.9);
+      ctx.lineTo(160.6, 394.9);
+      ctx.lineTo(160.6, 145.4);
+      ctx.closePath();
+      ctx.fillStyle = "rgb(226, 0, 25)";
+      ctx.fill();
+      ctx.stroke();
+      ctx.restore();
+
+  </script>
+
+
+  <div class="container">
+    <div class="row1"><p>row1&nbsp;</p></div>
+    <div class="row2"><canvas id="canvas" width="433" height="396"></canvas></div>
+    <div class="row3"><p>row3&nbsp;</p></div>
+  </div>
+
+
+
+</body>
+</html>
